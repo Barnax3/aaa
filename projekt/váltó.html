@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Váltó    </title>
+    <link rel="stylesheet" href="váltó.css">
+    <script src="váltó.js"></script>
+</head>
+<body>
+
+    <div class="div">
+        <select name="Opcio" id="lista">
+            <option value="binary" onselect="Binaryon()">Binary-ból</option>
+            <option value="decisz" onselect="Binaryon()">Decimal-ból</option>
+            <option value="octalsz" onselect="Binaryon()">Octal-ból</option>
+            <option value="hexasz" onselect="Binaryon()">Hexa-ból</option>
+            </select>
+        <input type="text" id="number1" placeholder="Szám">
+        <button id="sub" onclick="conver()">submit</button>
+        <br>
+        <select name="Összeg" id="lista2">
+
+        <option value="binary2" onselect="Binaryon2()">Binary-ba</option>
+        <option value="decisz2" onselect="Binaryon2()">Decimal-ba</option>
+        <option value="octalsz2" onselect="Binaryon2()">Octal-ba</option>
+        <option value="hexasz2" onselect="Binaryon2()">Hexa-ba</option>
+        </select>    
+
+        <input type="text" id="ertek" placeholder="Érték" >
+        
+    </select>
+    </div>
+    
+</body>
+</html>
